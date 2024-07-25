@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="calculator-2017-10-10.ico">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button class="function" onclick="clearDisplay()">C</button>
+            <button class="function" onclick="plusMinus()">±</button>
+            <button class="function" onclick="modulo()">%</button>
+            <button class="operator" onclick="appendToDisplay('÷')">÷</button>
+            <button class="number" onclick="appendToDisplay('7')">7</button>
+            <button class="number" onclick="appendToDisplay('8')">8</button>
+            <button class="number" onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('×')">×</button>
+            <button class="number" onclick="appendToDisplay('4')">4</button>
+            <button class="number" onclick="appendToDisplay('5')">5</button>
+            <button class="number" onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+            <button class="number" onclick="appendToDisplay('1')">1</button>
+            <button class="number" onclick="appendToDisplay('2')">2</button>
+            <button class="number" onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+            <button class="number" style="grid-column: span 2;" onclick="appendToDisplay('0')">0</button>
+            <button class="number" onclick="appendToDisplay(',')">,</button>
+            <button class="operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
